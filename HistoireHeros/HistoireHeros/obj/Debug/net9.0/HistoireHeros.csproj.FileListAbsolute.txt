@@ -1,0 +1,14 @@
+C:\Users\rapha\OneDrive\Bureau\Série 2\HistoireHeros\HistoireHeros\bin\Debug\net9.0\HistoireHeros.exe
+C:\Users\rapha\OneDrive\Bureau\Série 2\HistoireHeros\HistoireHeros\bin\Debug\net9.0\HistoireHeros.deps.json
+C:\Users\rapha\OneDrive\Bureau\Série 2\HistoireHeros\HistoireHeros\bin\Debug\net9.0\HistoireHeros.runtimeconfig.json
+C:\Users\rapha\OneDrive\Bureau\Série 2\HistoireHeros\HistoireHeros\bin\Debug\net9.0\HistoireHeros.dll
+C:\Users\rapha\OneDrive\Bureau\Série 2\HistoireHeros\HistoireHeros\bin\Debug\net9.0\HistoireHeros.pdb
+C:\Users\rapha\OneDrive\Bureau\Série 2\HistoireHeros\HistoireHeros\obj\Debug\net9.0\HistoireHeros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rapha\OneDrive\Bureau\Série 2\HistoireHeros\HistoireHeros\obj\Debug\net9.0\HistoireHeros.AssemblyInfoInputs.cache
+C:\Users\rapha\OneDrive\Bureau\Série 2\HistoireHeros\HistoireHeros\obj\Debug\net9.0\HistoireHeros.AssemblyInfo.cs
+C:\Users\rapha\OneDrive\Bureau\Série 2\HistoireHeros\HistoireHeros\obj\Debug\net9.0\HistoireHeros.csproj.CoreCompileInputs.cache
+C:\Users\rapha\OneDrive\Bureau\Série 2\HistoireHeros\HistoireHeros\obj\Debug\net9.0\HistoireHeros.dll
+C:\Users\rapha\OneDrive\Bureau\Série 2\HistoireHeros\HistoireHeros\obj\Debug\net9.0\refint\HistoireHeros.dll
+C:\Users\rapha\OneDrive\Bureau\Série 2\HistoireHeros\HistoireHeros\obj\Debug\net9.0\HistoireHeros.pdb
+C:\Users\rapha\OneDrive\Bureau\Série 2\HistoireHeros\HistoireHeros\obj\Debug\net9.0\HistoireHeros.genruntimeconfig.cache
+C:\Users\rapha\OneDrive\Bureau\Série 2\HistoireHeros\HistoireHeros\obj\Debug\net9.0\ref\HistoireHeros.dll

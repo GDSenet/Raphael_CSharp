@@ -138,6 +138,73 @@ if (Titus.PlayerAnswer == 1)
         }
     }
     Titus.Step6();
+    if (Titus.PlayerAnswer == 1)
+    {
+        Titus.Step6F();
+        if (Titus.Piece == 0);
+        {
+            Titus.Step6FN();
+            if (Titus.PlayerAnswer == 1)
+            {
+                Titus.Step6F1();
+                Titus.Step6M();
+                if (Titus.PlayerAnswer == 1)
+                {
+                    Titus.Step6M1();
+                }
+                if (Titus.PlayerAnswer == 2)
+                {
+                    if (Titus.Blessure == 1)
+                    {
+                        Titus.Step6M2B();
+                    }
+                    if (Titus.Blessure == 0)
+                    {
+                        Titus.Step6M2S();
+                    }
+                }
+            }
+            if (Titus.PlayerAnswer == 2)
+            {
+                Titus.Step6F3();
+            }
+        }
+        if (Titus.Piece == 1);
+        {
+            Titus.Step6FO();
+            if (Titus.PlayerAnswer == 1)
+            {
+                Titus.Step6F1();
+            }
+            if (Titus.PlayerAnswer == 2)
+            {
+                Titus.Step6F2();
+            }
+            if (Titus.PlayerAnswer == 3)
+            {
+                Titus.Step6F3();
+            }
+        }
+    }
+    if (Titus.PlayerAnswer == 2);
+    {
+        Titus.Step6M();
+            if (Titus.PlayerAnswer == 1)
+            {
+                Titus.Step6M1();
+            }
+            if (Titus.PlayerAnswer == 2)
+            {
+                if (Titus.Blessure == 1)
+                {
+                    Titus.Step6M2B();
+                }
+                if (Titus.Blessure == 0)
+                {
+                    Titus.Step6M2S();
+                }
+            }
+    }
 }
 if (Titus.PlayerAnswer == 2)
 {
@@ -294,5 +361,72 @@ public class Krakote
         Console.WriteLine("Entrez '1' pour examiner le bassin ou '2' pour aller directement à la porte.");
         PlayerAnswer = (int.Parse(ConsoleReadline()));
         return PlayerAnswer;
+    }
+
+    public int Step6F()
+    {
+        Console.WriteLine("Vous vous penchez sur la fontaine...");
+    }
+
+    public int Step6FO()
+    {
+        Console.WriteLine("En examinant la fontaine vous remarquez d'autres pièces similaires à celle que vous avez ramassé. Que voulez vous faire ?");
+        Console.WriteLine("Entrez '1' pour ne rien faire, '2' pour jeter la pièce que vous avez ramassé plus tôt dedans ou '3' pour tenter de ramasser les pièces au fond du bassin.");
+        PlayerAnswer = (int.Parse(ConsoleReadline()));
+        return PlayerAnswer;
+    }
+
+    public int Step6FN()
+    {
+        Console.WriteLine("Des pièces d'or brillent d'un magnifique éclat au fond de l'eau. Que voulez vous faire ?");
+        Console.WriteLine("Entrez '1' pour ne rien faire ou '2' pour tenter de ramasser les pièces au fond du bassin.");
+        PlayerAnswer = (int.Parse(ConsoleReadline()));
+        return PlayerAnswer;
+    }
+
+    public int Step6F1()
+    {
+        Console.WriteLine("Vous laissez cette fontaine sans intérêt pour vous pencher sur cette porte.");
+    }
+
+    public int Step6F2()
+    {
+        Console.WriteLine("Vous prenez la pièce que vous avez ramassé plus tôt pour la jeter dans le bassin après l'avoir embrassé, espérant que cela vous apporte de la chance pour le reste du donjon. ");
+        Console.WriteLine("Vous entendez une voix résonner quand la pièce touche le fond du bassin 'J'honore votre piété et votre générosité. Prenez ceci en gage de mon respect.'");
+        Console.WriteLine("Un coffre rempli à ras bord de pièces d'or apparait devant vous. Fasciné, vous attrapez les poignées sur ses côtés pour le soulever. Quand vous terminez de vous relever, vous êtes revenu devant le donjon. Voilà une expédition des plus fructueuses !");
+    }
+
+    public int Step6F3()
+    {
+        Console.WriteLine("Vous plongez votre bras dans le bassin et parvenez à attraper quelques pièces, avant de vous rendre compte que l'eau du bassin s'est étendue sur tout votre corps.");
+        Console.WriteLine("Vous n'avez pas le temps de crier avant que l'eau ne vous recouvre le visage. Et c'est ainsi que vous êtes mort noyé par un bassin enchanté.");
+    }
+
+    public int Step6M()
+    {
+        Console.WriteLine("Vous vous approchez de la porte. Sans trop savoir pourquoi, vous avez l'impression de l'entendre respirer.");
+        Console.WriteLine("C'est une mimique ! Entrez '1' pour la frapper avec votre épée ! Ou soyez plus raisonnable et évitez de faire du bruit en ouvrant simplement cette porte avec '2'.");
+        PlayerAnswer = (int.Parse(ConsoleRead()));
+        return PlayerAnswer;
+    }
+
+    public int Step6M1()
+    {
+        Console.WriteLine("Vous aviez raison ! Alors que vous frappez cette créature avec votre épée, elle pousse un couinement d'agonie avant de disparaitre en fumée.");
+        Console.WriteLine("Derrière ce qui fut son déguisement vous trouvez un coffre repli à ras bord d'or.");
+        Console.WriteLine("Fasciné, vous attrapez les poignées sur ses côtés pour le soulever. Quand vous terminez de vous relever, vous êtes revenu devant le donjon. Voilà une expédition des plus fructueuses !");
+    }
+
+    public int Step6M2B()
+    {
+        Console.WriteLine("Alors que vous vous approchez de la porte, elle change de forme rapidement et vous frappe avec un tentacule terminé par une pointe acérée.");
+        Console.WriteLine("La blessure, couplée à celle que vous avez reçu plus tôt, vous est fatale.");
+    }
+
+    public int Step6M2S()
+    {
+        Console.WriteLine("Alors que vous vous approchez de la porte, elle change de forme rapidement et vous frappe avec un tentacule terminé par une pointe acérée. Heureusement, ce n'est pas suffisant pour vous tuer !");
+        Console.WriteLine("Alors que vous ripostez contrecette créature avec votre épée, elle pousse un couinement d'agonie avant de disparaitre en fumée. Derrière ce qui fut son déguisement vous trouvez un coffre repli à ras bord d'or.");
+        Console.WriteLine("Fasciné, vous attrapez les poignées sur ses côtés pour le soulever. Quand vous terminez de vous relever, vous êtes revenu devant le donjon. Voilà une expédition des plus fructueuses !");
     }
 }
